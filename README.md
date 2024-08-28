@@ -2,6 +2,8 @@
 
 # Calculadora de Energia
 
+[![NPM](https://img.shields.io/npm/l/css)](https://github.com/JonathanStamczak/calculadora-de-energia/blob/main/LICENSE) 
+
 A **Calculadora de Energia** é uma aplicação web simples que permite aos usuários calcular o consumo de energia e a emissão de CO2 com base no uso de dispositivos elétricos. A aplicação é desenvolvida utilizando apenas **JavaScript**, **HTML** e **CSS**.
 
 ## Funcionalidades
