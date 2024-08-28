@@ -35,7 +35,7 @@ calculadora-de-energia/
 ├── index.html
 ├── styles.css
 └── script.js
-
+ ```
 ## Objetivo
 
 O projeto **Calculadora de Energia** foi criado com o objetivo de realizar a Atividade Extensionista I: Tecnologia Aplicada à Inclusão Digital - Faculdade Uninter.
