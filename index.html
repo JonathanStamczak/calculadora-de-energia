@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Consumo Energético</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Consumo Energético</h1>
+        <div id="ideal-consumption">
+            <p>Consumo ideal: <span id="ideal-kwh">150 MWh</span></p>
+            <p>Fique atento se o consumo ultrapassar <span id="alert-kwh">150 MWh</span></p>
+        </div>
+        <div id="machine-inputs">
+            <h2>Registro de Consumo das Máquinas</h2>
+            <div id="machines"></div>
+            <button id="add-machine">Adicionar Máquina</button>
+            <button id="add-to-history">Adicionar ao Histórico</button>
+            <button id="clear-all">Limpar Tudo</button>
+            <button id="export-data">Exportar Dados</button>
+            <button id="register-equipment">Cadastrar Equipamento</button>
+        </div>
+        <div id="history">
+            <h2>Histórico de Consumo</h2>
+            <ul id="history-list"></ul>
+        </div>
+        <div id="carbon-emission">
+            <h2>Emissão de Carbono</h2>
+            <p id="carbon-emission-value">Emissão total de CO2: 0 kg</p>
+        </div>
+        <button id="generate-report">Gerar Relatório</button>
+        <div id="report" style="display: none;">
+            <h2>Relatório Mensal</h2>
+            <p id="report-consumption"></p>
+            <p id="report-status"></p>
+            <p id="report-emission"></p>
+            <p id="report-risks"></p>
+            <p id="report-tips"></p>
+            <p id="report-conclusion"></p>
+        </div>
+    </div>
+
+    <!-- Tela de Cadastro de Equipamento -->
+    <div class="container" id="equipment-registration" style="display: none;">
+        <h1>Cadastro de Máquina/Equipamento</h1>
+        <div id="equipment-form">
+            <input type="text" id="equipment-name" placeholder="Nome do Equipamento">
+            <input type="number" id="equipment-consumption" placeholder="Consumo em kWh">
+            <button id="save-equipment">Salvar Equipamento</button>
+            <button id="back-to-calculator">Voltar para Calculadora</button>
+        </div>
+        <div id="equipment-list">
+            <h2>Equipamentos Cadastrados</h2>
+            <ul id="equipment-list-items"></ul>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
